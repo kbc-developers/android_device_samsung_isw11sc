@@ -10,7 +10,7 @@
     <int name="minMessageCountPerThread">10</int>
     <int name="maxMessageCountPerThread">5000</int>
     <int name="mMaxTextViewSize">5000</int>
-    <string name="uaProfUrl">http://device.sprintpcs.com/Samsung/</string>
+    <string name="uaProfUrl">http://device.sprintpcs.com/Samsung/SPH-D710/GA10.rdf</string>
     <int name="recipientLimit">-1</int>
     <int name="smsToMmsTextThreshold">4</int>
     <string name="emailGatewayNumber">6245</string>
