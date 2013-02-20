@@ -60,10 +60,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
 
-# Sensors
-PRODUCT_PACKAGES += \
-    sensors.exynos4
-
 # Packages
 PRODUCT_PACKAGES := \
     GalaxyS2Settings \
@@ -81,7 +77,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libhwconverter \
     libs5pjpeg \
-    libfimg
+    libfimg \
+    sensors.exynos4
 
 # Screen density is actually considered a locale (since it is taken into account
 # the the build-time selection of resources). The product definitions including
