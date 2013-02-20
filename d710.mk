@@ -60,6 +60,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
 
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.exynos4
+
 # Packages
 PRODUCT_PACKAGES := \
     GalaxyS2Settings \
