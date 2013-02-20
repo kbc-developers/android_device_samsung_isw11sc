@@ -1,4 +1,3 @@
-
 /dev/accelerometer        0660   system     system
 /dev/akm8975              0660   system     system
 /dev/block/mmcblk0p4      0660   system     system
@@ -50,7 +49,7 @@
 /dev/ttyVTCTRL0           0660   radio      radio
 /dev/ttyVTENT0            0660   radio      radio
 /dev/ttyVTVD0             0660   radio      radio
-/dev/tun                  0660   vpn        vpn
+/dev/tun                  0660   system     system
 /dev/ump                  0666   system     graphics
 /dev/umts*                0660   system     radio
 /dev/usb/lp*              0660   system     usb
