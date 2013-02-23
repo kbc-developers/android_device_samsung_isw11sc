@@ -34,9 +34,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/d710/bluetooth/inc
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4210
 TARGET_KERNEL_CONFIG := cyanogenmod_d710_defconfig
 
-# Display
-BOARD_EGL_NEEDS_LEGACY_FB := true
-
 # Notification LED
 BOARD_HAS_LED_NOTIF := true
 
