@@ -16,10 +16,10 @@ LOCAL_PATH := device/samsung/d710
 
 # Init files
 PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/init.smdk4210.rc:root/init.smdk4210.rc \
-    $(LOCAL_PATH)/init.smdk4210.usb.rc:root/init.smdk4210.usb.rc \
-    $(LOCAL_PATH)/fstab.smdk4210:root/fstab.smdk4210 \
-    $(LOCAL_PATH)/ueventd.smdk4210.rc:root/ueventd.smdk4210.rc
+    $(LOCAL_PATH)/rootdir/init.smdk4210.rc:root/init.smdk4210.rc \
+    $(LOCAL_PATH)/rootdir/init.smdk4210.usb.rc:root/init.smdk4210.usb.rc \
+    $(LOCAL_PATH)/rootdir/fstab.smdk4210:root/fstab.smdk4210 \
+    $(LOCAL_PATH)/rootdir/ueventd.smdk4210.rc:root/ueventd.smdk4210.rc
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -49,22 +49,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
 
-# Net
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    $(LOCAL_PATH)/configs/ip-up:system/etc/ppp/ip-up \
-    $(LOCAL_PATH)/configs/ip-down:system/etc/ppp/ip-down
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/Volume.db:system/etc/Volume.db \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
 
 # Packages
 PRODUCT_PACKAGES := \
-    GalaxyS2Settings \
-    smdk4210_hdcp_keys
-
+    GalaxyS2Settings
 
 # WIMAX
 PRODUCT_PACKAGES += \
@@ -72,12 +63,7 @@ PRODUCT_PACKAGES += \
     WiMAXHiddenMenu \
     AngryGPS \
     SprintMenu \
-    SystemUpdateUI
-
-PRODUCT_PACKAGES += \
-    libhwconverter \
-    libs5pjpeg \
-    libfimg \
+    SystemUpdateUI \
     sensors.exynos4
 
 # Screen density is actually considered a locale (since it is taken into account
@@ -88,11 +74,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_LOCALES += hdpi
-
-# The OpenGL ES API level that is natively supported by this device.
-# This is a 16.16 fixed point number
-PRODUCT_PROPERTY_OVERRIDES := \
-    ro.opengles.version=131072
 
 # These are the hardware-specific settings that are stored in system properties.
 # Note that the only such settings should be the ones that are too low-level to
@@ -144,8 +125,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     dalvik.vm.checkjni=false
 
-# we have enough storage space to hold precise GC data
-PRODUCT_TAGS += dalvik.gc.type-precise
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=240
 
 # enable repeatable keys in cwm
 PRODUCT_PROPERTY_OVERRIDES += \
