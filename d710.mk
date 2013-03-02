@@ -51,19 +51,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Net
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/configs/ip-up:system/etc/ppp/ip-up \
     $(LOCAL_PATH)/configs/ip-down:system/etc/ppp/ip-down
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/Volume.db:system/etc/Volume.db \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
 
 # Packages
 PRODUCT_PACKAGES := \
-    GalaxyS2Settings \
-    smdk4210_hdcp_keys
+    GalaxyS2Settings
 
 
 # WIMAX
@@ -75,9 +72,6 @@ PRODUCT_PACKAGES += \
     SystemUpdateUI
 
 PRODUCT_PACKAGES += \
-    libhwconverter \
-    libs5pjpeg \
-    libfimg \
     sensors.exynos4
 
 # Screen density is actually considered a locale (since it is taken into account
