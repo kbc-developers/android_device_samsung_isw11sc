@@ -70,9 +70,6 @@ PRODUCT_PACKAGES += \
     SprintMenu \
     SystemUpdateUI
 
-PRODUCT_PACKAGES += \
-    sensors.exynos4
-
 # Screen density is actually considered a locale (since it is taken into account
 # the the build-time selection of resources). The product definitions including
 # this file must pay attention to the fact that the first entry in the final
