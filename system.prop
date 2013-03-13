@@ -1,5 +1,5 @@
 #
-# system.prop for d710
+# system.prop for isw11sc
 #
 
 rild.libpath=/system/lib/libsec-ril40.so

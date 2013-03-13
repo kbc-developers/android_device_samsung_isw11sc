@@ -336,8 +336,8 @@ on boot
 
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
-    setprop ro.build.product SPH-D710
-    setprop ro.product.device SPH-D710
+    setprop ro.build.product ISW11SC
+    setprop ro.product.device ISW11SC
     setprop ro.radio.noril yes
 
 # Permisions for sensors

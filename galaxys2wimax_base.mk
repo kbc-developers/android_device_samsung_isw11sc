@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-DEVICE_PACKAGE_OVERLAYS := device/samsung/d710/overlay
+DEVICE_PACKAGE_OVERLAYS := device/samsung/galaxys2wimax/overlay
 
 # This device is hdpi.
 PRODUCT_AAPT_CONFIG := normal hdpi
@@ -22,26 +22,26 @@ PRODUCT_LOCALES += hdpi
 
 # Init files
 PRODUCT_COPY_FILES := \
-	device/samsung/d710/lpm.rc:root/lpm.rc \
-	device/samsung/d710/init.smdk4210.usb.rc:root/init.smdk4210.usb.rc \
-	device/samsung/d710/init.smdk4210.rc:root/init.smdk4210.rc \
-	device/samsung/d710/ueventd.smdk4210.rc:root/ueventd.smdk4210.rc
+	device/samsung/galaxys2wimax/lpm.rc:root/lpm.rc \
+	device/samsung/galaxys2wimax/init.smdk4210.usb.rc:root/init.smdk4210.usb.rc \
+	device/samsung/galaxys2wimax/init.smdk4210.rc:root/init.smdk4210.rc \
+	device/samsung/galaxys2wimax/ueventd.smdk4210.rc:root/ueventd.smdk4210.rc
 
 # Audio
 PRODUCT_COPY_FILES += \
-	device/samsung/d710/configs/asound.conf:system/etc/asound.conf
+	device/samsung/galaxys2wimax/configs/asound.conf:system/etc/asound.conf
 
 # Vold
 PRODUCT_COPY_FILES += \
-	device/samsung/d710/configs/vold.fstab:system/etc/vold.fstab
+	device/samsung/galaxys2wimax/configs/vold.fstab:system/etc/vold.fstab
 
 # Local Init
 PRODUCT_COPY_FILES += \
-	device/samsung/d710/configs/init.local.rc:system/etc/init.local.rc
+	device/samsung/galaxys2wimax/configs/init.local.rc:system/etc/init.local.rc
 
 # Media
 PRODUCT_COPY_FILES += \
-	device/samsung/d710/configs/media_profiles.xml:system/etc/media_profiles.xml
+	device/samsung/galaxys2wimax/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
@@ -49,9 +49,9 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_COPY_FILES += \
-	device/samsung/d710/configs/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-	device/samsung/d710/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-	device/samsung/d710/configs/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
+	device/samsung/galaxys2wimax/configs/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+	device/samsung/galaxys2wimax/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+	device/samsung/galaxys2wimax/configs/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
 
 PRODUCT_PROPERTY_OVERRIDES := \
 	wifi.interface=wlan0 \
@@ -61,8 +61,8 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330
 
 # Gps
 PRODUCT_COPY_FILES += \
-	device/samsung/d710/configs/gps.conf:system/etc/gps.conf \
-	device/samsung/d710/configs/sirfgps.conf:system/etc/sirfgps.conf
+	device/samsung/galaxys2wimax/configs/gps.conf:system/etc/gps.conf \
+	device/samsung/galaxys2wimax/configs/sirfgps.conf:system/etc/sirfgps.conf
 
 # Packages
 PRODUCT_PACKAGES := \
@@ -110,9 +110,9 @@ PRODUCT_PACKAGES += \
 # Ril
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.default_network=4 \
-	ro.com.google.clientidbase=android-sprint-us \
-	ro.cdma.home.operator.numeric=310120 \
-	ro.cdma.home.operator.alpha=Sprint \
+	ro.com.google.clientidbase=android-samsung \
+	ro.cdma.home.operator.numeric=44007 \
+	ro.cdma.home.operator.alpha=KDDI \
 	net.cdma.pppd.authtype=require-pap \
 	net.cdma.pppd.user=user[SPACE]SprintNextel \
 	net.cdma.datalinkinterface=/dev/ttyCDMA0 \
@@ -125,9 +125,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	mobiledata.interfaces=ppp0,uwbr0
 
 PRODUCT_COPY_FILES += \
-	device/samsung/d710/configs/ip-up:system/etc/ppp/ip-up \
-	device/samsung/d710/configs/ip-up:system/etc/ppp/ip-down \
-	device/samsung/d710/configs/pppd_runner:system/bin/pppd_runner
+	device/samsung/galaxys2wimax/configs/ip-up:system/etc/ppp/ip-up \
+	device/samsung/galaxys2wimax/configs/ip-up:system/etc/ppp/ip-down \
+	device/samsung/galaxys2wimax/configs/pppd_runner:system/bin/pppd_runner
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -184,7 +184,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	hwui.render_dirty_regions=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sf.lcd_density=240
+	ro.sf.lcd_density=320
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 

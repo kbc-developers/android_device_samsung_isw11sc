@@ -18,19 +18,19 @@
 $(call inherit-product, vendor/cm/config/cdma.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := d710
+PRODUCT_RELEASE_NAME := galaxys2wimax
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/d710/full_d710.mk)
+$(call inherit-product, device/samsung/galaxys2wimax/full_galaxys2wimax.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := d710
-PRODUCT_NAME := cm_d710
-PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := SPH-D710 
+PRODUCT_DEVICE := ISW11SC
+PRODUCT_NAME := cm_galays2wimax
+PRODUCT_BRAND := KDDI
+PRODUCT_MODEL := ISW11SC
 
 #Set build fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SPH-D710 BUILD_FINGERPRINT=samsung/SPH-D710/SPH-D710:4.0.3/IML74K/FC24:user/release-keys PRIVATE_BUILD_DESC="SPH-D710-user 4.0.3 IMM76D FC24 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SCI11 BUILD_FINGERPRINT=KDDI/SCI11/ISW11SC:4.0.4/IMM76D/KDMP3:user/release-keys PRIVATE_BUILD_DESC="SCI11-user 4.0.4 IMM76D KDMP3 release-keys"

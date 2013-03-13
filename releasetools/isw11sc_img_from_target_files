@@ -43,7 +43,7 @@ import zipfile
 if not hasattr(os, "SEEK_SET"):
   os.SEEK_SET = 0
 
-import d710_common as common
+import isw11sc_common as common
 
 OPTIONS = common.OPTIONS
 

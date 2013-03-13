@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo full_d710-eng
-add_lunch_combo cm_d710-userdebug
+add_lunch_combo full_galaxys2wimax-eng
+add_lunch_combo cm_galaxys2wimax-userdebug

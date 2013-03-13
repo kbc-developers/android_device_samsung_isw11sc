@@ -26,8 +26,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/d710/d710.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_d710
-PRODUCT_DEVICE := d710
+PRODUCT_NAME := full_galaxys2wimax
+PRODUCT_DEVICE := galaxys2wimax
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SPH-D710 
+PRODUCT_MODEL := ISW11SC

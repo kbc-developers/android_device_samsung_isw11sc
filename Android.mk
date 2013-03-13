@@ -22,11 +22,11 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),d710)
+ifeq ($(TARGET_DEVICE),galaxys2wimax)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := d710_hdcp_keys
+LOCAL_MODULE := galaxys2wimax_hdcp_keys
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_SUFFIX := -timestamp
