@@ -35,7 +35,6 @@ BOARD_HAS_LED_NOTIF := true
 BOARD_MOBILEDATA_INTERFACE_NAME := "ppp0"
 
 # Recovery
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/isw11sc/recovery/recovery_keys.c
 BOARD_UMS_LUNFILE := "/sys/devices/platform/s3c-usbgadget/gadget/lun%d/file"
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 
