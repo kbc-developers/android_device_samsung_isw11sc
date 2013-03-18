@@ -26,7 +26,7 @@ TARGET_RECOVERY_INITRC := device/samsung/isw11sc/recovery/recovery.rc
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/isw11sc/bluetooth/include
 
 # Kernel Config
-TARGET_KERNEL_SOURCE := kernel/samsung/smdk4210
+TARGET_KERNEL_SOURCE := kernel/samsung/smdk4210jpn
 TARGET_KERNEL_CONFIG := cyanogenmod_isw11sc_defconfig
 # Notification LED
 BOARD_HAS_LED_NOTIF := true
