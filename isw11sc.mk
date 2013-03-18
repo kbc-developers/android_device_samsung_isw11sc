@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/samsung/d710
+LOCAL_PATH := device/samsung/isw11sc
 
 # Init files
 PRODUCT_COPY_FILES := \
@@ -89,7 +89,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # be reachable from resources or other mechanisms.
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
-    wifi.supplicant_scan_interval=180 \
+    wifi.supplicant_scan_interval=15 \
     ro.telephony.sends_barcount=1 \
     ro.ril.def.agps.mode=2 \
     ro.telephony.call_ring.multiple=false \
@@ -105,11 +105,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Telephony property for CDMA
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=4 \
-    ro.com.google.clientidbase=android-sprint-us \
-    ro.cdma.home.operator.numeric=310120 \
-    ro.cdma.home.operator.alpha=Sprint \
-    net.cdma.pppd.authtype=require-pap \
-    net.cdma.pppd.user=user[SPACE]SprintNextel \
+    ro.com.google.clientidbase=android-kddi-jp \
+    ro.cdma.home.operator.numeric=44007 \
+    ro.cdma.home.operator.alpha=KDDI \
     net.cdma.datalinkinterface=/dev/ttyCDMA0 \
     net.interfaces.defaultroute=cdma \
     net.cdma.ppp.interface=ppp0 \
@@ -118,7 +116,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mobiledata.interfaces=ppp0,wlan0,uwbr0 \
     ro.telephony.ril_class=SamsungCDMAv6RIL \
     ro.ril.samsung_cdma=true \
-    ro.carrier=Sprint
+    ro.carrier=KDDI
 
 # enable Google-specific location features,
 # like NetworkLocationProvider and LocationCollector
@@ -146,4 +144,4 @@ $(call inherit-product, device/samsung/galaxys2-common/common.mk)
 DEVICE_PACKAGE_OVERLAYS := \
     $(LOCAL_PATH)/overlay \
     device/samsung/galaxys2-common/overlay
-$(call inherit-product-if-exists, vendor/samsung/d710/d710-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/isw11sc/isw11sc-vendor.mk)

@@ -15,7 +15,7 @@
 # limitations under the License.
 
 VENDOR=samsung
-DEVICE=d710
+DEVICE=isw11sc
 DEVICEOUTDIR=vendor/$VENDOR/$DEVICE
 DEVICEBASE=../../../$DEVICEOUTDIR/proprietary
 DEVICEMAKEFILE=../../../$DEVICEOUTDIR/$DEVICE-vendor-blobs.mk

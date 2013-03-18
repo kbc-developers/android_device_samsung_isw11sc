@@ -18,23 +18,23 @@
 $(call inherit-product, vendor/cm/config/cdma.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := SPH-D710
+PRODUCT_RELEASE_NAME := SCH-ISW11SC
 
 # Bootanimation
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 480
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/d710/full_d710.mk)
+$(call inherit-product, device/samsung/isw11sc/full_isw11sc.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := d710
-PRODUCT_NAME := cm_d710
+PRODUCT_DEVICE := isw11sc
+PRODUCT_NAME := cm_isw11sc
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := SPH-D710 
+PRODUCT_MODEL := SCH-ISW11SC
 
 #Set build fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SPH-D710 TARGET_DEVICE=SPH-D710 BUILD_FINGERPRINT=samsung/SPH-D710/SPH-D710:4.1.2/JZO54K/FL16:user/release-keys PRIVATE_BUILD_DESC="SPH-D710-user 4.1.2 JZ054K FL16 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SCI11 TARGET_DEVICE=ISW11SC BUILD_FINGERPRINT=KDDI/SCI11/ISW11SC:4.0.4/IMM76D/KDMP3:user/release-keys PRIVATE_BUILD_DESC="SCI11-user 4.0.4 IMM76D KDMP3 release-keys"

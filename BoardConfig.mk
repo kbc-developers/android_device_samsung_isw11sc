@@ -19,16 +19,15 @@
 # by BoardConfigVendor.mk
 -include device/samsung/galaxys2-common/BoardCommonConfig.mk
 
-TARGET_BOARD_INFO_FILE := device/samsung/d710/board-info.txt
-TARGET_RECOVERY_INITRC := device/samsung/d710/recovery/recovery.rc
+TARGET_BOARD_INFO_FILE := device/samsung/isw11sc/board-info.txt
+TARGET_RECOVERY_INITRC := device/samsung/isw11sc/recovery/recovery.rc
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/d710/bluetooth/include
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/isw11sc/bluetooth/include
 
 # Kernel Config
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4210
-TARGET_KERNEL_CONFIG := cyanogenmod_d710_defconfig
-
+TARGET_KERNEL_CONFIG := cyanogenmod_isw11sc_defconfig
 # Notification LED
 BOARD_HAS_LED_NOTIF := true
 
@@ -36,15 +35,15 @@ BOARD_HAS_LED_NOTIF := true
 BOARD_MOBILEDATA_INTERFACE_NAME := "ppp0"
 
 # Recovery
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/d710/recovery/recovery_keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/isw11sc/recovery/recovery_keys.c
 BOARD_UMS_LUNFILE := "/sys/devices/platform/s3c-usbgadget/gadget/lun%d/file"
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_10x18.h\"
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/d710/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/isw11sc/include
 # assert
-TARGET_OTA_ASSERT_DEVICE := epic4gtouch,SPH-D710,d710,smdk4210,SPH-D710VMUB,SPH-D710BST
+TARGET_OTA_ASSERT_DEVICE := isw11sc,SCH-ISW11SC,ISW11SC
 
 # Use the non-open-source parts, if they're present
--include vendor/samsung/d710/BoardConfigVendor.mk
+-include vendor/samsung/isw11sc/BoardConfigVendor.mk
 
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/galaxys2-common/shbootimg.mk
